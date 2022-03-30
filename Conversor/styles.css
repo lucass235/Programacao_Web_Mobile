@@ -1,0 +1,15 @@
+body {
+  align-items: center;
+  background-color: aliceblue;
+}
+
+.campoConversao {
+  height: 50px;
+}
+
+.campoDolar {
+  height: 50px;
+}
+
+.campoReal {
+}

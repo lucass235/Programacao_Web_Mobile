@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="./assets/img/calc.png" type="image/x-icon">
+	<link rel="stylesheet" href="./styles.css">
+	<title>Conversor</title>
+</head>
+
+<body>
+
+	<h1>Conversor Dólar em Real</h1>
+
+	<div class="campoConversao">
+		<label for="tconversao">Taxa de conversão:</label>
+		<input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" id="taxaconversao"
+			name="taxa de conversão" placeholder="Digite a taxa de conversão">
+		<button class="btn-taxa" onclick="taxaConversao()"> Confirmar taxa</button>
+	</div>
+	<div class="campoDolar">
+		<label for="vdolar">Valor Dólar:</label>
+		<input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" id="valordolar"
+			name="valor em dólar" placeholder="Digite o valor em dólar">
+		<button onclick="converterReal()">converter</button>
+		<div id="resultadoReal"></div>
+	</div>
+	<div class="compoReal">
+		<label for="treal">Valor Real:</label>
+		<input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" id="valorreal"
+			name="valor em real" placeholder="Digite o valor em real">
+		<button onclick="converterDolar()">converter</button>
+		<div id="resultadoDolar"></div>
+	</div>
+	<script src="./script.js"></script>
+
+	<footer>
+		<br>
+		<small>By Lucas dos Santos Amorim Rêgo</small>
+		<hr>
+		<small>Matricula: 202010968-0</small>
+	</footer>
+
+</body>
+
+</html>
